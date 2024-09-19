@@ -353,11 +353,18 @@ main{
                 .Share--nav{
                     position: absolute;
                     left: 0;
+                    ul{
+                        overflow-x: hidden;
+                        width: 1200px;
+                        justify-content: start;
+                    }
                 }
                 .Share--image-nav{
                     margin-top: 150px;
                     margin-left: 15px;
                     width: 150%;
+                    overflow-x: hidden;
+                    justify-content: start;
                     .mobile-hide{
                         display: none;
                     }

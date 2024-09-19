@@ -1,5 +1,4 @@
 @use "../abstracts/" as *;
-
 *{
     font-family: 'Poppins';
     font-size: 16px;
@@ -15,7 +14,6 @@ header{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-
     // Contaiter
     .header-container{
         display: flex;
@@ -25,9 +23,6 @@ header{
         height: pxToRem(95);
         background-color: #f5f0f0;
 
-        
-        
-        
         .header-container_logo{
             // margin-left: 120px;
             margin-left: 12%;
@@ -60,7 +55,7 @@ header{
                 }
             }
         }
-        
+
         .header-container_user{
             padding-right: pxToRem(120);
             display: flex;
@@ -75,8 +70,6 @@ header{
         }
         
     }
-
-
     // Main
     .header-main{
         .header-main__title--top{
@@ -85,7 +78,6 @@ header{
             padding: pxToRem(68) 0;
             margin: 0 auto;
             text-align: center;
-            
             .text-blue{
                 color: blue;
                 font-size: clamp( 3rem, 4vw, 4rem);
@@ -98,7 +90,6 @@ header{
                 margin: pxToRem(30) pxToRem(7.5);
                 font-weight: 100;
             }
-
             button{
                 width: pxToRem(189);
                 height: pxToRem(50);
@@ -118,18 +109,15 @@ header{
                 }
             }
         }
-
         .header-main__image-bg--bottom{
             height: pxToRem(586);  
             margin: pxToRem(68) auto 0 auto;
             width: pxToRem(1177);
             position: relative;
-
             @include tablet{
                 width: pxToRem(904);
                 height: pxToRem(530);
             }
-
             .image-bg--top{
                 height: pxToRem(530);
                 width: 100%;
@@ -139,7 +127,6 @@ header{
                 margin: 0 auto;
                 display: block;
             }
-
             .image-bg--bottom{
                 position: absolute;
                 right: 0;
@@ -147,13 +134,11 @@ header{
             }
         }
     }
-
     // Responsive Mobile
     @include mobile{
         .header-container_menu{
             display: none;
         }
-
         .header-container_user {
             button{
                 display: none;
@@ -168,7 +153,6 @@ header{
                 padding-left: 80%;
             }
         }
-
         .header-main{
             .header-main__title--top{
                 width: auto;
@@ -193,7 +177,6 @@ header{
         }
         
     }
-
     // Responsive Tablet
     @include tablet{
         .header-container {
@@ -204,14 +187,12 @@ header{
                     padding-right: 5%;
                 }
             }
-            
             .header-container_user{
                 padding-right: 1rem;
                 img{
                     display: none;
                 }
             }
-
 
             .header-container_logo{
                 margin-left: 1.2rem;
@@ -223,7 +204,6 @@ header{
             }
         }
 
-        
     }
 }
 

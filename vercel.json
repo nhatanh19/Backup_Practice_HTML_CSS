@@ -1,18 +1,12 @@
 {
   "name": "html-css-training",
   "version": 2,
-  "builds": [
-    {
-      "src": "src/pages/index.html",
-      "use": "@vercel/static-build"
-    }
-  ],
   "buildCommand": "npm install && npm run build",
   "outputDirectory": "dist",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/pages/index.html"
+      "dest": "package.json"
     }
   ]
 }

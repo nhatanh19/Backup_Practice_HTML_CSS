@@ -4,13 +4,16 @@
   "builds": [
     {
       "src": "src/pages/index.html",
-      "use": "@vercel/static"
+      "use": "@vercel/static-build"
     }
   ],
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "dist",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/src/pages/index.html"
+      "dest": "/index.html"
     }
   ]
 }
+
